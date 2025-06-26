@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+  </head>
+  <body>
+    <script>
+      const value = {
+        addr: '111臺北市士林區忠誠路二段77號前方候車亭',
+        e_addr:
+          'The bus station front of No. 77, Sec. 2, Zhongcheng Rd., Shilin District, Taipei City 111, Taiwan (R.O.C.)',
+      }
+      const address = value.addr
+      const addressDetailIndex = value.addr.indexOf('號')
+      const addressFixed = address.slice(0, addressDetailIndex + 1)
+      const addressDetail = address.slice(addressDetailIndex + 1)
+      const e_address = value.e_addr
+      const e_addressDetailIndex = value.e_addr.indexOf('No.')
+      const e_addressFixed = e_address.slice(e_addressDetailIndex)
+      const e_addressDetail = e_address.slice(0, e_addressDetailIndex)
+      console.log(address)
+      console.log(addressDetailIndex)
+      console.log(addressFixed)
+      console.log(addressDetail)
+      console.log(e_address)
+      console.log(e_addressDetailIndex)
+      console.log(e_addressFixed)
+      console.log(e_addressDetail)
+    </script>
+  </body>
+</html>
